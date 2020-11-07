@@ -1,65 +1,186 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="text/css" href="css/estilo.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Morena Flor</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
-  </head>
-  <body>
-    <!-- Container Principal -->
-    <div id="container">
-        <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #FFC0CB;" >
+  <title>Morena Flor</title>
+  <style type="text/css">
+    body,
+    html {
+      margin: 0;
+      font: 16px "Lato"sans-serif;
+      color: #777;
+      height: 100%;
+    }
 
-          <!-- Logo -->
-          <a href="index.html" class="navbar-brand"><img src="imagens/morena-flor3.jpg" alt=""></a>
+    .conteudo {
+      color: #777;
+      background-color: white;
+      text-align: justify;
+      padding: 50px 80px;
+    }
 
-          <!-- Menu Hamburguer -->
-          <button class="navbar-toggler" data-toggle="collapse" 
-          data-target="#navegacao">
-              <span class="navbar-toggler-icon"></span>
-          </button>
+    h3 {
+      text-transform: uppercase;
+      color: #111;
+      text-align: center;
+    }
 
-          <!-- navegacao -->
-          <div class="collapse navbar-collapse" id="navegacao">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                      <a href="index.html" class="nav-link">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="" class="nav-link">Produtos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="" class="nav-link">Sobre</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="" class="nav-link">Contato</a>
-                </li>
-              </ul>
+    .caixa1 {
+      position: relative;
+      height: 100%;
+      opacity: 0.5;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .caixa1 {
+      background-image: url(imagens/imagem1.jpeg);
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .titulo-produtos {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    /*
+      .conteudo-titulo {
+        position: absolute;
+        left: 0%;
+        top: 45%;
+        width: 100%;
+        text-align: center;
+      }
+
+      .conteudo-titulo span.titulo {
+        color: #fff;
+        background-color: #111;
+        padding: 18px;
+        font-size: 25px;
+        letter-spacing: 5px;
+      }
+*/
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #FFC0CB;">
+
+    <!-- Logo -->
+    <a href="index.html" class="navbar-brand"><img src="imagens/morena-flor3.jpg" alt=""></a>
+
+    <!-- Menu Hamburguer -->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- navegacao -->
+    <div class="collapse navbar-collapse" id="navegacao">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#quem-somos" class="nav-link">Quem Somos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#produtos" class="nav-link">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Como Comprar</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Contato</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+  <div class="caixa1">
+    <div class="conteudo-titulo">
+      <span class="titulo"></span>
+    </div>
+  </div>
+    <div id="quem-somos" class="conteudo">
+      <h3>Morena Flor</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum obcaecati, cumque natus dicta voluptatum facere id
+        deleniti, eum fuga eius error suscipit mollitia, veniam est expedita laudantium totam aliquid? Error. Lorem, ipsum
+        dolor sit amet consectetur adipisicing elit. Delectus, dolorum. Totam sit voluptatum, error ullam obcaecati
+        veritatis maxime sunt. Quaerat blanditiis, exercitationem soluta impedit ratione nam vero error asperiores!
+        Ut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque esse dolor expedita culpa laboriosam minima
+        tempore, animi quam aut odit quod asperiores deleniti. Magni, quidem explicabo dicta temporibus laborum culpa.</p>
+    </div>
+    <div id="produtos" class="titulo-produtos" style="padding-right: 50px; padding-left: 50px;">
+      <h3>Produtos</h3>
+      <div class="card-group" style="padding-top: 10px;">
+        <div class="card">
+          <img class="card-img-top" src="imagens/imagem1.jpeg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit eos unde quam ducimus ad, ipsam voluptatibus iusto ex labore inventore temporibus nemo molestiae voluptates atque placeat animi, facilis, sit reiciendis?</p>
           </div>
-        </nav>
+          <div class="card-footer">
+            <small class="text-muted">Atualizados 3 minutos atrás</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="imagens/imagem1.jpeg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis atque nobis sint! Quia accusantium ullam molestiae ea commodi aspernatur possimus velit! Assumenda hic cumque facere quos eveniet distinctio esse minima.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Atualizados 3 minutos atrás</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="imagens/imagem1.jpeg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Título do card</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, repellat velit. Quaerat nisi, hic ducimus alias eius debitis quis eos ex officia aliquam rerum sequi illo vel quo inventore veniam.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Atualizados 3 minutos atrás</small>
+          </div>
+        </div>
       </div>
     </div>
+    <div style="padding-top: 10px;">
+      <h3>Como Comprar</h3>
+    </div>
+
+    <div style="padding-top: 10px;">
+      <h3>Contato</h3>
+    </div>
+    
 
 
 
 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
 
+</body>
 
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-  </body>
 </html>
